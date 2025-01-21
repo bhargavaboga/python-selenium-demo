@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">TestFrameWork Demo Report</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">TestFrameWork Demo Report</h1>
+    <p>Report generated on 21-Jan-2025 at 10:56:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">4 tests took 00:04:25.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">2 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" />
+            <span class="xfailed">1 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" />
+            <span class="xpassed">1 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.0&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;Faker&#34;: &#34;33.1.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_multi_city_1___Hyderabad___HYD_____London___LHR_____26_March_2025____London___LHR_____New_York___JFK_____15_April_2025__&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;https://www.yatra.com&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_multi_city_1___Hyderabad___HYD_____London___LHR_____26_March_2025____London___LHR_____New_York___JFK_____15_April_2025__&#34;, &#34;duration&#34;: &#34;00:00:31&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_multi_city_1___Hyderabad___HYD_____London___LHR_____26_March_2025____London___LHR_____New_York___JFK_____15_April_2025__&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:31&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;https://www.yatra.com\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    TestSearchAndVerifyFilter:test_search_flights.py:49 Test Data is: Hyderabad, (HYD) London, (LHR) 26,March,2025 London, (LHR) New York, (JFK) 15,April,2025\nDEBUG    YatraHomePage:yatra_home_page.py:375 Departure date is [&amp;#x27;26&amp;#x27;, &amp;#x27;March&amp;#x27;, &amp;#x27;2025&amp;#x27;]\nINFO     YatraHomePage:yatra_home_page.py:195 Date Wednesday, March 26th, 2025 selected\nDEBUG    YatraHomePage:yatra_home_page.py:380 Departure date_2 is [&amp;#x27;15&amp;#x27;, &amp;#x27;April&amp;#x27;, &amp;#x27;2025&amp;#x27;]\nDEBUG    YatraHomePage:yatra_home_page.py:358 date_found_value is Tuesday, April 15th, 2025\nINFO     YatraHomePage:yatra_home_page.py:360 Date Tuesday, April 15th, 2025 selected\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:53 Search is completed\n\n&#34;}], &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_multi_city_2___New_Delhi___DEL_____Frankfurt___FRA_____22_April_2025____Frankfurt___FRA_____San_Francisco___SFO_____31_May_2025__&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;https://www.yatra.com&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_multi_city_2___New_Delhi___DEL_____Frankfurt___FRA_____22_April_2025____Frankfurt___FRA_____San_Francisco___SFO_____31_May_2025__&#34;, &#34;duration&#34;: &#34;00:00:29&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_multi_city_2___New_Delhi___DEL_____Frankfurt___FRA_____22_April_2025____Frankfurt___FRA_____San_Francisco___SFO_____31_May_2025__&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:29&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;https://www.yatra.com\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    TestSearchAndVerifyFilter:test_search_flights.py:49 Test Data is: New Delhi, (DEL) Frankfurt, (FRA) 22,April,2025 Frankfurt, (FRA) San Francisco, (SFO) 31,May,2025\nDEBUG    YatraHomePage:yatra_home_page.py:375 Departure date is [&amp;#x27;22&amp;#x27;, &amp;#x27;April&amp;#x27;, &amp;#x27;2025&amp;#x27;]\nINFO     YatraHomePage:yatra_home_page.py:195 Date Tuesday, April 22nd, 2025 selected\nDEBUG    YatraHomePage:yatra_home_page.py:380 Departure date_2 is [&amp;#x27;31&amp;#x27;, &amp;#x27;May&amp;#x27;, &amp;#x27;2025&amp;#x27;]\nDEBUG    YatraHomePage:yatra_home_page.py:358 date_found_value is Saturday, May 31st, 2025\nINFO     YatraHomePage:yatra_home_page.py:360 Date Saturday, May 31st, 2025 selected\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:53 Search is completed\n\n&#34;}], &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_n_Stops_1___Hyderabad___HYD_____Calgary___YYC_____31_January_2025___2_&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;https://www.yatra.com&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}, {&#34;name&#34;: null, &#34;format_type&#34;: &#34;html&#34;, &#34;content&#34;: &#34;&lt;div&gt;&lt;img src=\&#34;testcases/test_search_flights.py_TestSearchAndVerifyFilter_test_search_flights_n_Stops_1___Hyderabad___HYD_____Calgary___YYC_____31_January_2025___2_.png\&#34; alt=\&#34;screenshot\&#34; style=\&#34;width:300px;height:200px\&#34; onclick=\&#34;window.open(this.src)\&#34; align=\&#34;right\&#34;/&gt;&lt;/div&gt;&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;XFailed&#34;, &#34;testId&#34;: &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_n_Stops_1___Hyderabad___HYD_____Calgary___YYC_____31_January_2025___2_&#34;, &#34;duration&#34;: &#34;00:01:27&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;XFailed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_n_Stops_1___Hyderabad___HYD_____Calgary___YYC_____31_January_2025___2_&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:27&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;https://www.yatra.com\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;testcases.test_search_flights.TestSearchAndVerifyFilter testMethod=test_search_flights_n_Stops_1___Hyderabad___HYD_____Calgary___YYC_____31_January_2025___2_&amp;gt;\nfrom_city = &amp;#x27;Hyderabad, (HYD)&amp;#x27;, to_city = &amp;#x27;Calgary, (YYC)&amp;#x27;, departure_date = &amp;#x27;31,January,2025&amp;#x27;, num_of_stops = 2\n\n    @pytest.mark.xfail\n    @data(*Utils.excel_reader(&amp;quot;D:\\\\PythonSelenium\\\\TestFrameWorkDemo\\\\testdata\\\\Test_Data_Yatra.xlsx&amp;quot;,&amp;quot;Sheet1&amp;quot;))\n    @unpack\n    # @data(*Utils.csv_reader(&amp;quot;D:\\\\PythonSelenium\\\\TestFrameWorkDemo\\\\testdata\\\\Test_Data_Yatra.csv&amp;quot;))\n    # @unpack\n    def test_search_flights_n_Stops(self,from_city,to_city,departure_date,num_of_stops):\n    \n        self.log.debug(&amp;quot;Test Data is: {} {} {} {}&amp;quot;.format(from_city,to_city,departure_date,num_of_stops))\n        self.yatra_home.handle_republic_day_dialogue() ####Temp Code\n        search_results = self.yatra_home.search_flights(from_city, to_city, departure_date.split(&amp;#x27;,&amp;#x27;))\n        search_results.wait_for_all_results_to_be_fetched()\n        self.log.info(&amp;quot;Search is completed&amp;quot;)\n        search_results.dynamic_scrolling()\n        all_flight_stops = search_results.get_results_all_stops()\n        self.log.info(&amp;quot;Total Number of  Flights: &amp;quot; + str(len(all_flight_stops)))\n        self.log.debug(&amp;quot;Number of Stops are: {}&amp;quot;.format(num_of_stops))\n        stops_text = search_results.filter_by_stops(num_of_stops=num_of_stops)\n        sleep(2)\n        filtered_flight_stops = search_results.get_results_all_stops()\n        self.log.info(&amp;quot;Number of Flights Filtered: &amp;quot; + str(len(filtered_flight_stops)))\n&amp;gt;       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\n\ntestcases\\test_search_flights.py:43: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nutilities\\utils.py:18: in assert_text_of_web_elem_list\n    self.assert_all()\nC:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py:139: in assert_all\n    self.fail(&amp;#x27;&amp;#x27;.join(failure_output))\nE   AssertionError: ++++ soft assert failure details follow below ++++\nE   \nE   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nE   The following 10 failures were found in &amp;quot;wrapper&amp;quot; (utilities.utils.Utils):\nE   +----------------------+----------------------+----------------------+\nE    Failure 1 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [1/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 2 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [2/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 3 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [3/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 4 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [4/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 5 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [5/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 6 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [6/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 7 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [7/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 8 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [8/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 9 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [9/10] +-\nE   \nE   +----------------------+----------------------+----------------------+\nE    Failure 10 (&amp;quot;wrapper&amp;quot; method)\nE   +----------------------+----------------------+----------------------+\nE   Traceback (most recent call last):\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\utilities\\utils.py&amp;quot;, line 13, in assert_text_of_web_elem_list\nE       self.soft_assert(self.assertEqual,item.text,expected_text)\nE     File &amp;quot;D:\\PythonSelenium\\TestFrameWorkDemo\\testcases\\test_search_flights.py&amp;quot;, line 43, in test_search_flights_n_Stops\nE       self.utils.assert_text_of_web_elem_list(filtered_flight_stops,stops_text)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\ddt.py&amp;quot;, line 221, in wrapper\nE       return func(self, *args, **kwargs)\nE     File &amp;quot;C:\\Users\\bhargavaboga\\AppData\\Roaming\\Python\\Python313\\site-packages\\softest\\case.py&amp;quot;, line 62, in soft_assert\nE       assert_method(*arguments, **keywords)\nE       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 907, in assertEqual\nE       assertion_func(first, second, msg=msg)\nE       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 1273, in assertMultiLineEqual\nE       self.fail(self._formatMessage(msg, standardMsg))\nE       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE     File &amp;quot;C:\\Program Files\\Python313\\Lib\\unittest\\case.py&amp;quot;, line 732, in fail\nE       raise self.failureException(msg)\nE   AssertionError: &amp;#x27;3 Stops&amp;#x27; != &amp;#x27;2 Stops&amp;#x27;\nE   - 3 Stops\nE   ? ^\nE   + 2 Stops\nE   ? ^\nE   \nE   \nE   -+ [10/10] +-\n\n------------------------------ Captured log call -------------------------------\nDEBUG    TestSearchAndVerifyFilter:test_search_flights.py:30 Test Data is: Hyderabad, (HYD) Calgary, (YYC) 31,January,2025 2\nDEBUG    YatraHomePage:yatra_home_page.py:208 Departure date is [&amp;#x27;31&amp;#x27;, &amp;#x27;January&amp;#x27;, &amp;#x27;2025&amp;#x27;]\nINFO     YatraHomePage:yatra_home_page.py:195 Date Friday, January 31st, 2025 selected\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:34 Search is completed\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:37 Total Number of  Flights: 91\nDEBUG    TestSearchAndVerifyFilter:test_search_flights.py:38 Number of Stops are: 2\nDEBUG    SearchResults:search_results_page.py:41 Number of Stops = 2\nINFO     SearchResults:search_results_page.py:47 Filtering flights by 2 Stops\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:42 Number of Flights Filtered: 88\n\n&#34;}], &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_n_Stops_2___New_Delhi___DEL_____New_York___JFK_____27_February_2025___1_&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: &#34;URL&#34;, &#34;format_type&#34;: &#34;url&#34;, &#34;content&#34;: &#34;https://www.yatra.com&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;XPassed&#34;, &#34;testId&#34;: &#34;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_n_Stops_2___New_Delhi___DEL_____New_York___JFK_____27_February_2025___1_&#34;, &#34;duration&#34;: &#34;00:01:57&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;XPassed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;testcases/test_search_flights.py::TestSearchAndVerifyFilter::test_search_flights_n_Stops_2___New_Delhi___DEL_____New_York___JFK_____27_February_2025___1_&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:57&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;a target=\&#34;_blank\&#34; href=\&#34;https://www.yatra.com\&#34; class=\&#34;col-links__extra url\&#34;&gt;URL&lt;/a&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nDEBUG    TestSearchAndVerifyFilter:test_search_flights.py:30 Test Data is: New Delhi, (DEL) New York, (JFK) 27,February,2025 1\nDEBUG    YatraHomePage:yatra_home_page.py:208 Departure date is [&amp;#x27;27&amp;#x27;, &amp;#x27;February&amp;#x27;, &amp;#x27;2025&amp;#x27;]\nINFO     YatraHomePage:yatra_home_page.py:195 Date Thursday, February 27th, 2025 selected\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:34 Search is completed\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:37 Total Number of  Flights: 133\nDEBUG    TestSearchAndVerifyFilter:test_search_flights.py:38 Number of Stops are: 1\nDEBUG    SearchResults:search_results_page.py:41 Number of Stops = 1\nINFO     SearchResults:search_results_page.py:43 Filtering flights by 1 Stop\nINFO     TestSearchAndVerifyFilter:test_search_flights.py:42 Number of Flights Filtered: 88\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;TestFrameWork Demo Report&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>

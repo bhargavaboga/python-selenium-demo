@@ -49,6 +49,9 @@ class BaseDriver:
     def test_method(self):
         pass
 
+    def test_method_sdet_2(self):
+        pass
+
     
 
 

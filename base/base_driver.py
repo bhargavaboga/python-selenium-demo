@@ -46,6 +46,12 @@ class BaseDriver:
         wait = WebDriverWait(self.driver,10)
         wait.until(EC.element_to_be_clickable((locator_type,locator)))
 
+    def test_method(self):
+        pass
 
+    def test_method_sdet_2(self):
+        pass
+
+#Line from SDET-2
 
 

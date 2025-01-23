@@ -20,7 +20,7 @@ class TestSearchAndVerifyFilter(softest.TestCase):
     # # @file_data("../testdata/testdata.json")
     # # @file_data("../testdata/testdata.yaml")
     #
-    @pytest.mark.xfail
+    # @pytest.mark.xfail
     @data(*Utils.excel_reader("D:\\PythonSelenium\\TestFrameWorkDemo\\testdata\\Test_Data_Yatra.xlsx","Sheet1"))
     @unpack
     # @data(*Utils.csv_reader("D:\\PythonSelenium\\TestFrameWorkDemo\\testdata\\Test_Data_Yatra.csv"))

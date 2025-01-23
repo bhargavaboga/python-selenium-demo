@@ -53,6 +53,7 @@ class YatraHomePage(BaseDriver):
 
     def handle_republic_day_dialogue(self):
         self.wait_for_frame_to_be_available_and_switch(By.ID,"webklipper-publisher-widget-container-notification-frame")
+        sleep(1)
         self.driver.find_element(By.CSS_SELECTOR,".wewidgeticon.we_close.icon-large").click()
         self.driver.switch_to.default_content()
 
@@ -295,7 +296,7 @@ class YatraHomePage(BaseDriver):
         # Click and send first 3 characters of 'to  city'
         self.get_going_to_field_2().click()
         self.get_going_to_input_field_2().send_keys(to_city[0:3])
-        sleep(1)
+        sleep(2)
         # Get the list of  auto  suggestions of  'to city'
         to_city_list = self.get_all_to_cities_locators_auto_suggestions_2()
 
